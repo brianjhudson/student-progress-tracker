@@ -25,7 +25,7 @@ This endpoint accepts a student id parameter and returns the last (most recent) 
 ### Most Recent Cohort Score `/api/cohort/recent/:cohortId`
 This endpoint accepts a cohort id and returns the last score for each project.
 
-### Project Information
+### Project Information `/api/project/:projectId`
 This endpoint accepts a project id and returns an object containing information about each project, including average passing percentage and average elapsed time between first and last score report.  
 
 ## More to Come
