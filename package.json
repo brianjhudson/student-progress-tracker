@@ -1,0 +1,27 @@
+{
+  "name": "student-progress-tracker",
+  "version": "1.0.0",
+  "description": "A server which retrieves ids for students, receives score reports, and updates a database with the scores",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brianjhudson/student-progress-tracker.git"
+  },
+  "author": "Brian Hudson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brianjhudson/student-progress-tracker/issues"
+  },
+  "homepage": "https://github.com/brianjhudson/student-progress-tracker#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
+    "express-session": "^1.14.2",
+    "massive": "^2.5.0",
+    "passport": "^0.3.2"
+  }
+}
