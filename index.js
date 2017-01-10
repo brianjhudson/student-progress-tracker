@@ -1,9 +1,10 @@
-// Required libraries
+// Required libraries and files
 const express = require('express');
 const session = require('express-session');
 const {json} = require('body-parser');
 const cors = require('cors');
-const massive = reuire('massive');
+const massive = require('massive');
+const config = require('./config');
 
 // Server Config
 const app = express();
@@ -13,11 +14,16 @@ app.use(json());
 
 // Database Config
 const massiveServer = massive.connectSync({
-    connectionString: confg.elephantSQL
+    connectionString: config.elephantSQL
 });
 
 app.set('db', massiveServer);
 const db = app.get('db');
+console.log(db);
+
+db.create_table([], (err, result) => {
+    console.log(result);
+})
 
 // Endpoints
 
