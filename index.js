@@ -19,7 +19,6 @@ const massiveServer = massive.connectSync({
 
 app.set('db', massiveServer);
 const db = app.get('db');
-console.log(db);
 
 db.create_table([], (err, result) => {
     console.log(result);
